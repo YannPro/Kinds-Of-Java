@@ -1,4 +1,4 @@
-package com.yannyao.demo.DataStructure.Map.hashmap.IdentityHashMap;
+package com.yannyao.demo.datastructure.map.hashmap.IdentityHashMap;
 
 import java.util.*;
 

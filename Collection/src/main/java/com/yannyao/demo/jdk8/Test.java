@@ -1,10 +1,8 @@
 package com.yannyao.demo.jdk8;
 
 import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -80,13 +78,33 @@ public class Test {
     /****************************************************************************/
 
 
-//    public static void main(String[] args) {
+    public static void main(String[] args) {
 //        /**
-//         * Function接口
+//         * Function接口    BiFunction与Function的不同就是 前者传入两个参数  后者传入一个参数   都返回一个值
 //         */
+        //demo1
+
 //        Function<String, Integer> toInteger = Integer::valueOf;
 //        Function<String, String> backToString = toInteger.andThen(String::valueOf);
 //        backToString.apply("123");     // "123"
+
+        //demo2
+
+//        Function<Integer, Integer> name = e -> e * 2;
+//        Function<Integer, Integer> square = e -> e * e;
+//        int value = name.andThen(square).apply(3);
+//        System.out.println("andThen value=" + value);
+//        int value2 = name.compose(square).apply(3);
+//        System.out.println("compose value2=" + value2);
+
+        //demo3
+
+//        BiFunction<Integer, Integer, Integer> name = (e,f) -> e * 2 + f;
+//        Function<Integer, Integer> square = e -> e * e;
+//        int value = name.andThen(square).apply(3, 4);
+//        System.out.println("andThen value=" + value);
+
+
 //        /**
 //         * supplier接口  不接受参数
 //         */
@@ -98,25 +116,24 @@ public class Test {
 //        Consumer<String> greeter = System.out::println;
 //        greeter.accept("hahaha");
 
-//    }
+    }
     /****************************************************************************/
 
-    public static void main(String[] args) {
-        List<String> stringCollection = new ArrayList<>();
-        stringCollection.add("ddd2");
-        stringCollection.add("aaa2");
-        stringCollection.add("bbb1");
-        stringCollection.add("aaa1");
-        stringCollection.add("bbb3");
-        stringCollection.add("ccc");
-        stringCollection.add("bbb2");
-        stringCollection.add("ddd1");
-
-        stringCollection
-                .stream()
-                .filter((s) -> s.startsWith("a"))  //类似的还有 .map .match  .count
-                .forEach(System.out::println);
-        System.out.println(stringCollection);
-        System.out.println(stringCollection.stream());
-    }
+//    public static void main(String[] args) {
+//        List<String> stringCollection = new ArrayList<>();
+//        stringCollection.add("ddd2");
+//        stringCollection.add("aaa2");
+//        stringCollection.add("bbb1");
+//        stringCollection.add("aaa1");
+//        stringCollection.add("bbb3");
+//        stringCollection.add("ccc");
+//        stringCollection.add("bbb2");
+//        stringCollection.add("ddd1");
+//        stringCollection
+//                .stream()
+//                .filter((s) -> s.startsWith("a"))  //类似的还有 .map .match  .count
+//                .forEach(System.out::println);
+//        System.out.println(stringCollection);
+//        System.out.println(stringCollection.stream());
+//    }
 }
