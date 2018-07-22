@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
   datasource:
@@ -18,33 +18,33 @@ spring:
     producer:
       bootstrap-servers: localhost:9092
 
-  ## Redis é…ç½®
-  ## Redisæ•°æ®åº“ç´¢å¼•ï¼ˆé»˜è®¤ä¸º0ï¼‰
+  ## Redis ÅäÖÃ
+  ## RedisÊı¾İ¿âË÷Òı£¨Ä¬ÈÏÎª0£©
   redis:
-    ## RedisæœåŠ¡å™¨åœ°å€
+    ## Redis·şÎñÆ÷µØÖ·
     host: 127.0.0.1
-    ## RedisæœåŠ¡å™¨è¿æ¥ç«¯å£
+    ## Redis·şÎñÆ÷Á¬½Ó¶Ë¿Ú
     port: 63791
     pool:
-      ## è¿æ¥æ± æœ€å¤§è¿æ¥æ•°ï¼ˆä½¿ç”¨è´Ÿå€¼è¡¨ç¤ºæ²¡æœ‰é™åˆ¶ï¼‰
+      ## Á¬½Ó³Ø×î´óÁ¬½ÓÊı£¨Ê¹ÓÃ¸ºÖµ±íÊ¾Ã»ÓĞÏŞÖÆ£©
 #      max-active: 8
-#      ## è¿æ¥æ± æœ€å¤§é˜»å¡ç­‰å¾…æ—¶é—´ï¼ˆä½¿ç”¨è´Ÿå€¼è¡¨ç¤ºæ²¡æœ‰é™åˆ¶ï¼‰
+#      ## Á¬½Ó³Ø×î´ó×èÈûµÈ´ıÊ±¼ä£¨Ê¹ÓÃ¸ºÖµ±íÊ¾Ã»ÓĞÏŞÖÆ£©
 #      max-wait: -1
-#      ## è¿æ¥æ± ä¸­çš„æœ€å¤§ç©ºé—²è¿æ¥
+#      ## Á¬½Ó³ØÖĞµÄ×î´ó¿ÕÏĞÁ¬½Ó
 #      max-idle: 8
-#      ## è¿æ¥æ± ä¸­çš„æœ€å°ç©ºé—²è¿æ¥
+#      ## Á¬½Ó³ØÖĞµÄ×îĞ¡¿ÕÏĞÁ¬½Ó
 #      min-idle: 0
-#      ## è¿æ¥è¶…æ—¶æ—¶é—´ï¼ˆæ¯«ç§’ï¼‰
+#      ## Á¬½Ó³¬Ê±Ê±¼ä£¨ºÁÃë£©
       timeout: 0
-    ## RedisæœåŠ¡å™¨è¿æ¥å¯†ç ï¼ˆé»˜è®¤ä¸ºç©ºï¼‰
+    ## Redis·şÎñÆ÷Á¬½ÓÃÜÂë£¨Ä¬ÈÏÎª¿Õ£©
     password:
     database: 0
 
 
-## Mybatis é…ç½®
+## Mybatis ÅäÖÃ
 mybatis:
   mappe-locations: classpath:mapper/*.xml
   type-aliases-package: com.yannyao.demo.mybatis_redis.domain
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    cache-enabled: true               #äºŒçº§ç¼“å­˜çš„å…¨å±€å¼€å…³
+    cache-enabled: true               #¶ş¼¶»º´æµÄÈ«¾Ö¿ª¹Ø
