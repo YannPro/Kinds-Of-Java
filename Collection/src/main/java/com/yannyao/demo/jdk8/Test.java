@@ -6,6 +6,7 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public class Test {
     /**
@@ -78,7 +79,7 @@ public class Test {
     /****************************************************************************/
 
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        /**
 //         * Function接口    BiFunction与Function的不同就是 前者传入两个参数  后者传入一个参数   都返回一个值
 //         */
@@ -116,10 +117,10 @@ public class Test {
 //        Consumer<String> greeter = System.out::println;
 //        greeter.accept("hahaha");
 
-    }
+//    }
     /****************************************************************************/
 
-//    public static void main(String[] args) {
+    public static void main(String[] args) {
 //        List<String> stringCollection = new ArrayList<>();
 //        stringCollection.add("ddd2");
 //        stringCollection.add("aaa2");
@@ -135,5 +136,10 @@ public class Test {
 //                .forEach(System.out::println);
 //        System.out.println(stringCollection);
 //        System.out.println(stringCollection.stream());
-//    }
+
+        IntegerUtil util = new IntegerUtil();
+        List<Integer> list = Arrays.asList(11, 22, 25, 44);
+        list = list.stream().map(util::plus).collect(Collectors.toList());
+        System.out.println(list);
+    }
 }
