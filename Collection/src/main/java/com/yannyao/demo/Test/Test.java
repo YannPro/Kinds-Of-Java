@@ -3,6 +3,7 @@ package com.yannyao.demo.Test;
 import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @Author: YannYao
@@ -24,10 +25,18 @@ public class Test
         System.out.println("Hello");
     }
 
+    public static void test(int... a){
+        System.out.println(a[0]);
+    }
     public static void main(String args[])
     {
-        Test st1 = new Test();
-        st1.print();
+        test(1);
+        List<Integer> list = null;
+        for (Integer i: list){
+            System.out.println(i);
+        }
+//        Test st1 = new Test();
+//        st1.print();
 //        Test st2 = new Test();
 //        st2.print();
     }
