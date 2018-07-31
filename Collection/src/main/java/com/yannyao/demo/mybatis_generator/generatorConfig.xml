@@ -62,7 +62,7 @@
 		</javaClientGenerator>
 		<!-- 运行generator 脚本命令 ： mvn mybatis-generator:generate -->
 
-		<table tableName="wq" domainObjectName="Wq"
+		<table tableName="ym_order" domainObjectName="YmOrder"
 			   enableDeleteByExample="true">
 			<property name="useActualColumnNames" value="true" />
 		</table>
