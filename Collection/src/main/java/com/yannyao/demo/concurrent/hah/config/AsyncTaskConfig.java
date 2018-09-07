@@ -1,4 +1,4 @@
-package com.yannyao.demo.concurrent.config;
+package com.yannyao.demo.concurrent.hah.config;
 
 import java.util.concurrent.Executor;
 
@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 @Configuration
-@ComponentScan("com.yannyao.demo.concurrent.service")
+@ComponentScan("com.yannyao.demo.concurrent.hah.service")
 @EnableAsync
 // 线程配置类
 public class AsyncTaskConfig implements AsyncConfigurer {

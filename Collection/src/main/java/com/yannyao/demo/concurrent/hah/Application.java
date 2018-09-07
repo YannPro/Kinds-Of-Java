@@ -1,4 +1,4 @@
-package com.yannyao.demo.concurrent;
+package com.yannyao.demo.concurrent.hah;
 
 
 import java.util.ArrayList;
@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import com.yannyao.demo.concurrent.config.AsyncTaskConfig;
-import com.yannyao.demo.concurrent.service.AsyncTaskService;
+import com.yannyao.demo.concurrent.hah.config.AsyncTaskConfig;
+import com.yannyao.demo.concurrent.hah.service.AsyncTaskService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.task.TaskRejectedException;
 

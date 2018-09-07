@@ -1,4 +1,4 @@
-package com.yannyao.demo.concurrent.service;
+package com.yannyao.demo.concurrent.hah.service;
 
 
 import java.util.Random;

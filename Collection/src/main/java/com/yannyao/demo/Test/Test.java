@@ -31,10 +31,19 @@ public class Test
     public static void main(String args[])
     {
         test(1);
-        List<Integer> list = null;
-        for (Integer i: list){
-            System.out.println(i);
-        }
+
+        int i = 0;
+        label103:
+            while(true) {
+                i++;
+                System.out.println(i);
+                if(i>100000){
+                    break label103;
+                }
+            }
+
+
+
 //        Test st1 = new Test();
 //        st1.print();
 //        Test st2 = new Test();
