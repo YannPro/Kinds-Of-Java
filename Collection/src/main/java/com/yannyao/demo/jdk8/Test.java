@@ -13,18 +13,18 @@ public class Test {
      * Lambda  表达式
      * @param args
      */
-//    public static void main(String[] args) {
+//    public static void main(string[] args) {
 //        /*老版本写法*/
-//        List<String> names = Arrays.asList("ae", "b", "ce", "e");
-//        Collections.sort(names, new Comparator<String>() {
+//        List<string> names = Arrays.asList("ae", "b", "ce", "e");
+//        Collections.sort(names, new Comparator<string>() {
 //            @Override
-//            public int compare(String a, String b) {
+//            public int compare(string a, string b) {
 //                return b.compareTo(a);
 //            }
 //        });
 //
 //        /*lamdba写法*/
-//        Collections.sort(names, (String a, String b) -> {
+//        Collections.sort(names, (string a, string b) -> {
 //            return b.compareTo(a);
 //        });
 //        System.out.println(names);
@@ -34,8 +34,8 @@ public class Test {
 //     * 函数式接口
 //     * @param args
 //     */
-//    public static void main(String[] args) {
-//        Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
+//    public static void main(string[] args) {
+//        Converter<string, Integer> converter = (from) -> Integer.valueOf(from);
 //        Integer converted = converter.convert("123");
 //        System.out.println(converted);
 //    }
@@ -54,9 +54,9 @@ public class Test {
      * 方法与构造函数引用
      * @param args
      */
-//    public static void main(String[] args) {
+//    public static void main(string[] args) {
 //        //::会帮你选择合适的构造函数
-//        Converter<String, Integer> converter = Integer::valueOf;
+//        Converter<string, Integer> converter = Integer::valueOf;
 //        Integer converted = converter.convert("123");
 //        System.out.println(converted);
 //
@@ -73,20 +73,20 @@ public class Test {
 //        T convert(F from);
 //    }
 //    interface PersonFactory<P extends Person> {
-//        P create(String firstName, String lastName);
+//        P create(string firstName, string lastName);
 //    }
 
     /****************************************************************************/
 
 
-//    public static void main(String[] args) {
+//    public static void main(string[] args) {
 //        /**
 //         * Function接口    BiFunction与Function的不同就是 前者传入两个参数  后者传入一个参数   都返回一个值
 //         */
         //demo1
 
-//        Function<String, Integer> toInteger = Integer::valueOf;
-//        Function<String, String> backToString = toInteger.andThen(String::valueOf);
+//        Function<string, Integer> toInteger = Integer::valueOf;
+//        Function<string, string> backToString = toInteger.andThen(string::valueOf);
 //        backToString.apply("123");     // "123"
 
         //demo2
@@ -114,14 +114,14 @@ public class Test {
 //        /**
 //         * consumer接口  接收一个参数
 //         */
-//        Consumer<String> greeter = System.out::println;
+//        Consumer<string> greeter = System.out::println;
 //        greeter.accept("hahaha");
 
 //    }
     /****************************************************************************/
 
     public static void main(String[] args) {
-//        List<String> stringCollection = new ArrayList<>();
+//        List<string> stringCollection = new ArrayList<>();
 //        stringCollection.add("ddd2");
 //        stringCollection.add("aaa2");
 //        stringCollection.add("bbb1");

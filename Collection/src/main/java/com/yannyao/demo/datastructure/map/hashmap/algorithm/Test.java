@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Test {
     /*ArrayList去重方法一*/
-//    public static void main(String[] args) {
+//    public static void main(string[] args) {
 //        List<Integer> a = new ArrayList<Integer>(){{add(1);add(2);add(3);add(4);}};
 //        List<Integer> b = new ArrayList<Integer>(){{add(1);add(2);add(3);add(5);add(6);}};
 //        Iterator it = a.iterator();
