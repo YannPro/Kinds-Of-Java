@@ -50,5 +50,6 @@ public class MaximumDepth {
         t1.left = t3;
         t3.right = t4;
         t3.left = t5;
+        System.out.println(maxDepth(treeNode));
     }
 }
